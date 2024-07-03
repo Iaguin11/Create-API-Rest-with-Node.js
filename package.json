@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
@@ -22,7 +25,8 @@
     "tsup": "^8.1.0",
     "tsx": "^4.15.7",
     "typescript": "^5.5.2",
-    "vitest": "^1.6.0"
+    "vitest": "^1.6.0",
+    "sqlite3": "^5.1.7"
   },
   "dependencies": {
     "@fastify/cookie": "^9.3.1",
@@ -31,7 +35,7 @@
     "dotenv": "^16.4.5",
     "fastify": "^4.28.0",
     "knex": "^3.1.0",
-    "sqlite3": "^5.1.7",
+    "pg": "^8.12.0",
     "ts-node": "^10.9.2",
     "zod": "^3.23.8"
   }
